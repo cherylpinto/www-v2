@@ -257,44 +257,6 @@ const ContactUs = () => {
               </div>
             </div>
           </motion.section>
-
-          <motion.section
-            className="my-16"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={slideInBottom}
-          >
-            <motion.h2
-              className="text-5xl font-bold font-[Caveat] text-center"
-              variants={headerReveal}
-            >
-              Looking for Support?
-            </motion.h2>
-            <hr className="w-32 border-t-2 border-gray-400 mx-auto mt-2" />
-
-            <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100 mt-8">
-              <p className="text-gray-700 leading-relaxed mb-6 text-center text-lg">
-                Before reaching out, you might find answers to common questions
-                in our FAQ section. For technical support, visit our community
-                forums or Matrix chat where our active community can help.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link
-                  to="/about/faqs"
-                  className="inline-block px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors font-medium"
-                >
-                  Visit FAQs
-                </Link>
-                <Link
-                  to="matrix"
-                  className="inline-block px-6 py-3 bg-white text-blue-600 border-2 border-blue-600 rounded-full hover:bg-blue-50 transition-colors font-medium"
-                >
-                  Community Chat
-                </Link>
-              </div>
-            </div>
-          </motion.section>
         </div>
       </main>
       <Footer />
